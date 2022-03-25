@@ -12,23 +12,23 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="android:textViewStyle">@style/MyStyle </item>
+        <item name="android:textViewStyle">@style/AllTextViewColorAndSize </item>
 
 
 
     </style>
-
-    <style name="MyStyle">
+    <!-- style to change full app's text color and font size -->
+    <style name="AllTextViewColorAndSize">
         <item name="android:textColor" >@color/black </item>
         <item name="android:textSize">20sp</item>
     </style>
-
-    <style name="GreenText" parent="TextAppearance.AppCompat">
+    <!-- style to change team 1 score text color and font size -->
+    <style name="GreenTextTeam1Score" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/Green</item>
         <item name="android:textSize">40sp</item>
     </style>
-
-    <style name="YellowText" parent="TextAppearance.AppCompat">
+    <!-- style to change team 2 score text color and font size -->
+    <style name="YellowTextTeam2Score" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/yellow</item>
         <item name="android:textSize">40sp</item>
     </style>
