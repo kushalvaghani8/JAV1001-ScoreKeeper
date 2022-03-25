@@ -20,6 +20,7 @@
         app:layout_constraintVertical_bias="0.172" />
 
     <TextView
+        style="@style/YellowText"
         android:id="@+id/team1Score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,6 +69,7 @@
 
 
     <TextView
+        style="@style/GreenText"
         android:id="@+id/team2Score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -80,6 +82,7 @@
         app:layout_constraintVertical_bias="0.248" />
 
     <Button
+
         android:id="@+id/team1AddButton"
         android:layout_width="120dp"
         android:layout_height="53dp"

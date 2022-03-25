@@ -8,13 +8,13 @@ import android.widget.*;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    //declaring text views
     TextView team1Score;
     TextView team2Score;
     TextView ScoreIncrease;
     TextView errorMessage;
 
-    //Button team1AddButton;
+    //Declaring Seekbar
     SeekBar seekBar;
 
     @Override
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         team2SubtractButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                  /* -------------------------------------------------
+                    /* ------------------------------------------------
                        CALLING SUBTRACT METHOD (PASSING IN TWO VALUES)
                      --------------------------------------------------
                     */
@@ -108,12 +108,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
                 /* -------------------------------------------------------------------
                    SEEKBAR WITH A MAX VALUE OF 5 (5 IS SET IN XML - android:max="5")
                   --------------------------------------------------------------------
                 */
+
         seekBar = (SeekBar)findViewById(R.id.seekBar);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
 
@@ -122,16 +121,10 @@ public class MainActivity extends AppCompatActivity {
                 ScoreIncrease.setText(String.valueOf(i));
                 System.out.println(i);
             }
-
             @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
+            public void onStartTrackingTouch(SeekBar seekBar) {}
             @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
+            public void onStopTrackingTouch(SeekBar seekBar) {}
         });
 
     }
